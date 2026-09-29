@@ -1,0 +1,39 @@
+print("=" * 45)
+print("     WEATHER MONITORING & PREDICTION")
+print("=" * 45)
+temperature = float(input("Enter temperature (°C): "))
+humidity = float(input("Enter humidity (%): "))
+wind_speed = float(input("Enter wind speed (km/h): "))
+print("\nWeather Information")
+print("-" * 30)
+print(f"Temperature : {temperature} °C")
+print(f"Humidity    : {humidity} %")
+print(f"Wind Speed  : {wind_speed} km/h")
+if humidity >= 80 and temperature < 30:
+    prediction = "Rainy"
+elif temperature >= 35:
+    prediction = "Hot and Sunny"
+elif humidity >= 60:
+    prediction = "Cloudy"
+else:
+    prediction = "Clear"
+print("-" * 30)
+print(f"Weather Prediction: {prediction}")
+print("=" * 45)
+
+OUTPUT:
+=============================================
+     WEATHER MONITORING & PREDICTION
+=============================================
+Enter temperature (°C): 28
+Enter humidity (%): 83
+Enter wind speed (km/h): 30
+
+Weather Information
+------------------------------
+Temperature : 28.0 °C
+Humidity    : 83.0 %
+Wind Speed  : 30.0 km/h
+------------------------------
+Weather Prediction: Rainy
+=============================================
